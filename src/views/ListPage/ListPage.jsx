@@ -4,7 +4,7 @@ import CharacterPreview from '../../components/CharacterPreview/CharacterPreview
 import styles from './listPage.css'
 
 
-export const ListPage = () => {
+const ListPage = () => {
     const [characterList, setCharacterList] = useState([])
 
     useEffect(async () => {

@@ -4,7 +4,7 @@ import { BiArrowBack } from "react-icons/bi";
 import { fetchCharacter } from '../../services/fetch.js'
 import { useParams, Link } from 'react-router-dom'
 
-export const CharacterDetail = () => {
+const CharacterDetail = () => {
     const [chosenCharacter, setCharacter] = useState();
     const { name } = useParams();
 
