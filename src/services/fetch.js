@@ -11,7 +11,7 @@ const fetchCharacters = () => {
 const fetchCharacter = (characterName) => {
     return fetch(`${xFilesURL}characters/${characterName}`)
         .then(response => response.json())
-        .then(data => { data.results })
+        .then(data => { return data[0] })
         .catch(err => { throw err })
 }
 

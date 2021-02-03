@@ -16,7 +16,7 @@ export default function App() {
         <Route exact path="/"
           component={ListPage}
         />
-        <Route exact path="details/:id"
+        <Route exact path="/details/:name"
           component={CharacterDetail}
         />
       </Switch>
