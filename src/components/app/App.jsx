@@ -6,6 +6,7 @@ import {
   Switch
 } from 'react-router-dom';
 import ListPage from '../../views/ListPage/ListPage.jsx';
+import CharacterDetail from '../../views/CharacterDetail/CharacterDetail.jsx';
 
 
 export default function App() {
@@ -15,7 +16,11 @@ export default function App() {
         <Route exact path="/"
           component={ListPage}
         />
+        <Route exact path="details/:id"
+          component={CharacterDetail}
+        />
       </Switch>
+
     </Router>
 
   );

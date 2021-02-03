@@ -8,5 +8,12 @@ const fetchCharacters = () => {
         .catch(err => { throw err })
 }
 
+const fetchCharacter = (characterName) => {
+    return fetch(`${xFilesURL}characters/${characterName}`)
+        .then(response => response.json())
+        .then(data => { data.results })
+        .catch(err => { throw err })
+}
 
-module.exports = { fetchCharacters }
+
+module.exports = { fetchCharacters, fetchCharacter }
